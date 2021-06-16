@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Mohamed Gnedy
 
 ## About
-This app is getting weather information for each city available in Musement's catalogue and print them on the page.
+This app is getting weather information for each city available in Musement's catalogue and print them on the page with the following format "Processed city [city name] | [weather today] - [wheather tomorrow]".
 ### Example:
 
 - Processed city Milan | Heavy rain - Partly cloudy
