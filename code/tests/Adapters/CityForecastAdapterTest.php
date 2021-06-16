@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Tests\Adapters;
 
-use App\Adapters\CityForcastAdapter;
+use App\Adapters\CityForecastAdapter;
 use PHPUnit\Framework\TestCase;
 
-final class CityForcastAdapterTest extends TestCase
+final class CityForecastAdapterTest extends TestCase
 {
 
-    private function getCityForcastData()
+    private function getCityForecastData()
     {
         return
             (object)[
@@ -43,9 +43,9 @@ final class CityForcastAdapterTest extends TestCase
     public function testAdapteCity(): void
     {
 
-        $city = $this->getCityForcastData();
+        $city = $this->getCityForecastData();
 
-        $adapter = new CityForcastAdapter($city);
+        $adapter = new CityForecastAdapter($city);
         $adaptedCity = $adapter->adapte();
 
         $this->assertIsArray($adaptedCity);

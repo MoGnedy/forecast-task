@@ -7,7 +7,7 @@ namespace Tests\WeatherApi;
 use App\Clients\WeatherApiClient;
 use PHPUnit\Framework\TestCase;
 
-final class WeatherApiGetCitiesForcastTest extends TestCase
+final class WeatherApiGetCitiesForecastTest extends TestCase
 {
     const API_KEY = 'eb0d3f37cff6415d860141752211206';
 
@@ -25,17 +25,17 @@ final class WeatherApiGetCitiesForcastTest extends TestCase
         ];
     }
 
-    public function testgetCitiesForcast(): void
+    public function testgetCititsForecast(): void
     {
 
         $cities = $this->getCitiesSampleData();
 
         $weatherApiClient = new WeatherApiClient(self::API_KEY);
-        $citiesForcast = $weatherApiClient->getCitiesForcast($cities, 2);
+        $citiesForecast = $weatherApiClient->getCititsForecast($cities, 2);
 
-        $this->assertNotEmpty($citiesForcast);
+        $this->assertNotEmpty($citiesForecast);
 
-        foreach ($citiesForcast as $city) {
+        foreach ($citiesForecast as $city) {
             $this->assertObjectHasAttribute('location', $city);
             $this->assertObjectHasAttribute('forecast', $city);
         }

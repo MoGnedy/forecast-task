@@ -59,7 +59,7 @@ class WeatherApiClient
         return $data;
     }
 
-    public function getCitiesForcast($cities, $daysCount = 1)
+    public function getCititsForecast($cities, $daysCount = 1)
     {
         $multi = curl_multi_init();
         $channels = array();
@@ -82,8 +82,8 @@ class WeatherApiClient
             $channels[$url] = $channel;
         }
 
-        $citiesForcast = $this->executeMultiCurl($multi, $channels);
+        $citiesForecast = $this->executeMultiCurl($multi, $channels);
 
-        return $citiesForcast;
+        return $citiesForecast;
     }
 }

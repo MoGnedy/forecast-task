@@ -2,7 +2,7 @@
 
 namespace App\Adapters;
 
-class CityForcastAdapter
+class CityForecastAdapter
 {
     private $adaptee;
 
