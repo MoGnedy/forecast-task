@@ -13,3 +13,6 @@ This app is getting weather information for each city available in Musement's ca
 * Run `docker-compose up`
 * Optional: To run tests `docker-compose exec  -w /code php composer run-script test`
 * Navigate to localhost:8080
+
+## API design
+- [API's Postman Documentaion](https://documenter.getpostman.com/view/1970211/TzeWH8CB)
